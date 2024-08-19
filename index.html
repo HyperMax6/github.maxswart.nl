@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Swart</title>
+  </head>
+  <body>
+    <h1>Max Swart</h1>
+    <p id="text"></p>
+    
+    <script type="module" src="lib.js"></script>
+    <script>
+      import { calcAddition } from "./lib.js";
+        
+      const txtElement = document.getElementById('text');
+      txtElement.innerHTML = calcAddition(5, 4);
 
+    </script>
+  </body>
+</html>
